@@ -35,7 +35,7 @@ public class Spawn : MonoBehaviour
     void Update()
     {
         upTime -= Time.deltaTime;
-        if(upTime<0 && minTime>0)
+        if(upTime<0 && minTime>0.3)
         {
             minTime -= 0.1f;
             maxTime -= 0.1f;
@@ -74,7 +74,7 @@ public class Spawn : MonoBehaviour
         int object_index = Random.Range(0, viruses.Length);
         GameObject virus = viruses[object_index];
         GameObject clone = virus;
-        clone.transform.localScale = Vector3.one * Random.Range(0.5f, 1.5f);
+        //clone.transform.localScale = Vector3.one * Random.Range(0.5f, 1.0f);
         return clone;
     }
 }

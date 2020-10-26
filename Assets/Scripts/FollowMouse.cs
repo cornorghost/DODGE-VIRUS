@@ -24,8 +24,6 @@ public class FollowMouse : MonoBehaviour
         }
 
         FollowMouseMove(); //移动
-
-        CrashMove(); //闪现
     }
 
     //物体跟随鼠标旋转
@@ -57,15 +55,8 @@ public class FollowMouse : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
-    //闪现
-    void CrashMove()
+    public void setTarget(Vector3 newTarget)
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = 0;
-            targetPos = target;
-            transform.position = target;
-        }
+        targetPos = newTarget;
     }
 }
