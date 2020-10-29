@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Counting.cs" />
-    <Compile Include="Assets\Scripts\CrashSkill.cs" />
+    <Compile Include="Assets\Scripts\FlashSkill.cs" />
     <Compile Include="Assets\Scripts\FollowMouse.cs" />
     <Compile Include="Assets\Scripts\LocalValue.cs" />
     <Compile Include="Assets\Scripts\SceneSwitch.cs" />
